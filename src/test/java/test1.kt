@@ -23,10 +23,10 @@ class AppiumiOSLocalStorage {
 
         //3
         capabilities = DesiredCapabilities()
-        capabilities?.setCapability(MobileCapabilityType.DEVICE_NAME, "appiumTest-67851D55-0B03-4BD1-83D4-70944967E2C9-iPhone X")
+        capabilities?.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 11")
         capabilities?.setCapability(MobileCapabilityType.PLATFORM_NAME, "iOS")
-        capabilities?.setCapability(MobileCapabilityType.PLATFORM_VERSION, "14.5")
-        capabilities?.setCapability(MobileCapabilityType.APP, "/Users/fereizqosulaiman/Library/Developer/Xcode/DerivedData/TestIntegrateAppium-adjmhysxjrldcnfsbjjtsvhokjhm/Build/Products/Debug-iphonesimulator/TestIntegrateAppium.app")
+        capabilities?.setCapability(MobileCapabilityType.PLATFORM_VERSION, "15.0")
+        capabilities?.setCapability(MobileCapabilityType.APP, System.getenv("BITRISE_APP_DIR_PATH"))
         capabilities?.setCapability(MobileCapabilityType.NO_RESET, true)
         capabilities?.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest")
         capabilities?.setCapability("useNewWDA", false)
