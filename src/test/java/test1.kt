@@ -32,7 +32,7 @@ class AppiumiOSLocalStorage {
         capabilities?.setCapability("useNewWDA", false)
         //4
         driver = IOSDriver<IOSElement>(url, capabilities)
-        driver?.manage()?.timeouts()?.implicitlyWait(2, TimeUnit.SECONDS)
+        driver?.manage()?.timeouts()?.implicitlyWait(90, TimeUnit.SECONDS)
         driver?.resetApp()
     }
 
