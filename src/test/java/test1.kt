@@ -25,7 +25,7 @@ class AppiumiOSLocalStorage {
         capabilities = DesiredCapabilities()
         capabilities?.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 11")
         capabilities?.setCapability(MobileCapabilityType.PLATFORM_NAME, "iOS")
-        capabilities?.setCapability(MobileCapabilityType.PLATFORM_VERSION, "15.0")
+        capabilities?.setCapability(MobileCapabilityType.PLATFORM_VERSION, "14.5")
         capabilities?.setCapability(MobileCapabilityType.APP, System.getenv("BITRISE_APP_DIR_PATH"))
         capabilities?.setCapability(MobileCapabilityType.NO_RESET, true)
         capabilities?.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest")
