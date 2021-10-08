@@ -1,10 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Tests for iOS" parallel="false">
-    <parameter name="platform" value="ios"/>
-    <test name = "iOS">
+<suite name="Suite" parallel="tests">
+    <test name="iOS">
         <classes>
-            <class name="AppiumiOSLocalStorage"></class>
+            <class name="AppiumiOSLocalStorage"/>
         </classes>
     </test>
 </suite>
+
+
+        <!--<?xml version="1.0" encoding="UTF-8" ?>-->
+        <!--<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >-->
+        <!--<suite name="Suite" parallel="tests">-->
+        <!--    <parameter name="platform" value="ios"/>-->
+        <!--    <test name = "iOS">-->
+        <!--        <classes>-->
+        <!--            <class name="AppiumiOSLocalStorage"></class>-->
+        <!--        </classes>-->
+        <!--    </test>-->
+        <!--</suite>-->
